@@ -1,0 +1,21 @@
+rule,flagged_rows,excluded_from_revenue,excluded_from_profit,changed_rows,treatment
+missing_unit_price,4,4,4,0,No revenue or profit calculation
+missing_unit_cost,4,0,4,0,Revenue kept profit unavailable
+missing_customer_rating,20,0,0,0,Omit from rating summaries
+invalid_transaction_id,0,0,0,0,Exclude from core totals
+duplicate_transaction_id,10,10,10,0,Exclude collision pending reconciliation
+invalid_day_index,0,0,0,0,Exclude from daily and core totals
+unknown_outlet_code,2,2,2,0,Exclude from outlet core totals
+unknown_product_code,0,0,0,0,Exclude from product core totals
+unknown_category_code,0,0,0,0,Exclude from core totals
+category_mapping_mismatch,4,4,4,0,Exclude from core totals
+unknown_payment_code,0,0,0,0,Review code retain financial measures
+invalid_quantity,4,4,4,0,Exclude ambiguous sale quantity
+invalid_unit_price,2,2,2,0,Exclude from revenue and profit
+negative_unit_cost,2,0,2,0,Revenue kept profit unavailable
+impossible_discount,2,2,2,0,Exclude from revenue and profit
+negative_stock,0,0,0,0,Review stock value
+invalid_customer_rating,3,0,0,0,Omit from rating summaries
+zero_stock_with_sale,5,0,0,0,Review no automatic exclusion
+high_price_review,50,0,0,0,Retain and review price
+high_discount_review,5,0,0,0,Retain and review discount
